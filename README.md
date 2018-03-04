@@ -3,4 +3,5 @@ This is a simple e-commerce website in Node.js using MongoDB. It allows the user
 
 # Pre-requisites
 Node.js
+
 MongoDB
