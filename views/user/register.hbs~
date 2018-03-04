@@ -25,7 +25,7 @@
 						            {{/each}}
 						        </div>
 						        {{/if}}
-								
+								<p class="text-divider">Or Be Classical</p>
 								<div class="content">
 									<div class="input-group label-floating">
 										<span class="input-group-addon">

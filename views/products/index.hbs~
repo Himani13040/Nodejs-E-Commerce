@@ -16,7 +16,7 @@
                 <div class="row">
 					<div class="col-md-6">
 						<h1 class="title">ShoppingCart</h1>
-	                    <h4>Shop all that you can</h4>
+	                    <h4>Shop all that you want</h4>
 	                    <br />
 					</div>
                 </div>
@@ -26,6 +26,22 @@
 			<div class="container">
 			<div class="section text-center">
 	        	<h2 class="title">Some Latest Products</h2>
+
+			<table>
+			<tr>
+			<td>
+			 <img src="https://flask-e-commerce-api-heroku.herokuapp.com/static/uploads/harry-potter-muggle-in-the-streets-womens-t-shirt-india-438x600.jpg" alt="Thumbnail Image" class="img-raised img-thumbnail">
+			</td>
+			<td>
+			 <img src="https://flask-e-commerce-api-heroku.herokuapp.com/static/uploads/8442964_9212.jpg" alt="Thumbnail Image" class="img-raised img-thumbnail">
+			</td>
+			<td>
+			 <img src="https://flask-e-commerce-api-heroku.herokuapp.com/static/uploads/bg-job_sm.jpg" alt="Thumbnail Image" class="img-raised img-thumbnail">
+			</td>
+			</tr>
+
+
+			
 	        		{{# each products}}
 					<div class="team">
 						{{# each this}}
