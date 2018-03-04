@@ -1,0 +1,16 @@
+.thumbnail img{
+  max-height: 150px;
+}
+
+.thumbnail .description{
+  color: rgb(195, 195, 195);
+}
+
+.price{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.dropdown img {
+    border-radius: 50%;
+}

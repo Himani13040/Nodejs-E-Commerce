@@ -1,0 +1,52 @@
+<body class="landing-page">
+<div class="wrapper">
+        <div class="header header-filter" style="background-image: url('http://royalholiday.travel/wp-content/uploads/2017/02/Girls-Shopping.jpg');">
+            <div class="container">
+            <div class="alert alert-success {{#if noMessage}}hidden{{/if}}">
+			            <div class="container-fluid">
+							<div class="alert-icon">
+								<i class="material-icons">check</i>
+							</div>
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+			            	<b>Success Alert:</b> {{successMsg}}
+			            </div>
+			        </div>
+                <div class="row">
+					<div class="col-md-6">
+						<h1 class="title">ShoppingCart</h1>
+	                    <h4>Shop all that you want</h4>
+	                    <br />
+					</div>
+                </div>
+            </div>
+        </div>
+        <div class="main main-raised">
+			<div class="container">
+			<div class="section text-center">
+	        	<h2 class="title">Some Latest Products</h2>
+	        		{{# each products}}
+					<div class="team">
+						{{# each this}}
+							<div class="col-sm-6 col-md-4">
+			                    <div class="team-player">
+			                        <img src="{{this.imagePath}}" alt="Thumbnail Image" class="img-raised img-thumbnail">
+			                        <h4 class="title">{{title}} <br />
+										<small class="text-muted">${{price}}</small>
+									</h4>
+			                        <p class="description">{{description}}</p>
+									<div class="col-md-4 col-md-offset-3 text-center">
+	                                    <a href="/addToCart/{{this._id}}" class="btn btn-success" role="button">Add to cart</a>
+	                                </div>
+			                    </div>
+			                </div>
+						{{/each}}
+					</div>
+					 {{/each}}
+	            </div>
+	        	
+	        </div>
+
+		</div>
+		</body>

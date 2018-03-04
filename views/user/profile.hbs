@@ -1,0 +1,35 @@
+{{# if orders}}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>User Profile</h1>
+        <hr>
+        <h2>My Orders</h2>
+        {{# each orders }}
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul class="list-group">
+                        {{# each this.items }}
+                            <li class="list-group-item">
+                                <span class="badge">${{ this.price }}</span>
+                              <img src="{{this.item.imagePath}}" alt="No Image" style="max-height:75px">  {{ this.item.title }} | {{ this.qty }} Units
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <strong>Total Price: ${{ this.cart.totalPrice }}</strong>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+{{else}}
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+     <h1>User Profile</h1>
+        <hr>
+        <h2>My Orders</h2>
+    <h3 class="text-center" style="color:grey">You don't have any orders yet!!</h3>
+    </div>
+</div>
+{{/if}}
